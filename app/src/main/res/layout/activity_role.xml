@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RoleActivity"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dip_100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_white_round"
+            android:textColor="@color/colorLightBlack"
+            android:id="@+id/btn_cashier"
+            android:padding="@dimen/edit_padding"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="Cashier"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dip_10"
+        android:padding="@dimen/dip_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_white_round"
+            android:textColor="@color/colorLightBlack"
+            android:layout_margin="@dimen/dip_100"
+            android:id="@+id/btn_kitchen"
+            android:padding="@dimen/edit_padding"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="Kitchen"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:gravity="bottom"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

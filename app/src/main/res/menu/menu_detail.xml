@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ahmad.photovoice.SignUpActivity">
+    <item
+        android:visible="false"
+        android:id="@+id/btn_print"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_print"
+        app:showAsAction="always"
+        android:title="" />
+</menu>

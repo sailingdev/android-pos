@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".KitchenActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <com.example.rexpos.customViewPagers.NonSwipeableViewPager
+
+        android:id="@+id/vp_kitchen_screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.example.rexpos.customViewPagers.NonSwipeableViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/btn_preview"
+            android:layout_width="@dimen/dip_40"
+            android:layout_height="@dimen/dip_50"
+            android:src="@drawable/ic_preview"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_pre"
+            android:layout_toRightOf="@id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30sp"
+            android:text="0"/>
+
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/total_orders"
+                android:layout_marginEnd="@dimen/dip_10" />
+
+            <TextView
+                android:id="@+id/txt_total_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="22"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/dip_40"
+            android:layout_height="@dimen/dip_50"
+            android:src="@drawable/ic_next"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_next"
+            android:layout_toLeftOf="@id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30sp"
+            android:text="14"
+            android:layout_toStartOf="@id/btn_next" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dip_10"
+    android:paddingBottom="@dimen/dip_10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/item_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"
+            android:paddingRight="@dimen/dip_10"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txt_table_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#005"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:20"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:gravity="center"
+            android:padding="@dimen/dip_35"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/txt_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="35$"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dip_20"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/btn_print"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/dip_35"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/back_primary_round"
+            android:text="Print"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

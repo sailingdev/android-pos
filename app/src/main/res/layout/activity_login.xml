@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/layout_edit">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="60dp"
+                android:layout_above="@id/layout_edit"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/img_logo"/>
+
+                    <ImageView
+                        android:src="@drawable/frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_half_trans_round"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorLightBlack"
+                android:id="@+id/edit_email"
+                android:padding="@dimen/edit_padding"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_half_trans_round"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorLightBlack"
+                android:id="@+id/edit_password"
+                android:padding="@dimen/edit_padding"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:hint="@string/password"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_white_round"
+                android:textColor="@color/colorLightBlack"
+                android:id="@+id/btn_login"
+                android:padding="@dimen/edit_padding"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/login"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_white_round"
+                android:textColor="@color/colorLightBlack"
+                android:id="@+id/btn_change_server_url"
+                android:padding="@dimen/edit_padding"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:text="@string/change_server_url"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_sign_up"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/sign_up"
+                android:textSize="16sp"
+                android:padding="@dimen/edit_padding"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/gray_line_color"
+            android:text="@string/developed_by_virox_software_house_sdn_bhd"/>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
